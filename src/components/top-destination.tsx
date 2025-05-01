@@ -8,6 +8,8 @@ import Australia from "@/assets/Australia.jpg"
 import { IoAirplaneSharp } from 'react-icons/io5';
 import { motion } from "framer-motion";
 
+const MotionImage = motion(Image);
+
 const ORIGINAL_DESTIS = [
     { id: 1, img: Vietnam, place: "Golden Bridge, Bà Nà Hills", country: "Vietnam" },
     { id: 2, img: Croatia, place: "Old Town of Dubrovnik", country: "Croatia" },
@@ -17,8 +19,7 @@ const ORIGINAL_DESTIS = [
     { id: 6, img: Australia, place: "Uluru", country: "Australia" },
 ];
 
-const SLIDES = [...ORIGINAL_DESTIS, ...ORIGINAL_DESTIS.slice(0, 3)]
-
+const SLIDES = [...ORIGINAL_DESTIS, ...ORIGINAL_DESTIS]
 
 export default function TopDestination() {
     const [current, setCurrent] = useState(0)
@@ -41,8 +42,6 @@ export default function TopDestination() {
     }
 
     useEffect(() => {
-        console.log(current, ORIGINAL_DESTIS.length);
-
         if (current >= ORIGINAL_DESTIS.length) {
             setTimeout(() => {
                 setIsAnimating(false)
@@ -83,7 +82,7 @@ export default function TopDestination() {
                         <div
                             key={`${dest.id}-${index}`}
                             className='flex flex-col min-w-[280px]'>
-                            <Image
+                            <MotionImage
                                 src={dest.img}
                                 width={200}
                                 height={200}

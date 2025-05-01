@@ -1,6 +1,10 @@
+"use client"
 import Image from 'next/image'
 import React from 'react'
 import airplane from '@/assets/element-2.png'
+import { motion } from "framer-motion";
+
+const MotionImage = motion(Image);
 
 export default function Hero() {
     return (
@@ -13,7 +17,19 @@ export default function Hero() {
                         we nelo vou uncover the soark that turns every trip into a cherished story.</p>
                 </div>
                 <div className='flex-1 pt-20'>
-                    <Image src={airplane} width={400} height={400} alt='airplane' className='w-[780px] hero-img' />
+                    <MotionImage
+                        id='hero'
+                        src={airplane}
+                        width={400}
+                        height={400}
+                        alt='airplane'
+                        initial={{ scale: 0, x: -400 }}  // Start small
+                        animate={{ scale: 1, x: -10 }} 
+                        transition={{ duration: 4 }}
+                        className='w-[780px]'
+                        onAnimationComplete={() => document.querySelector('#hero').classList.add('hero-img')}
+
+                        />
                 </div>
             </div>
 
