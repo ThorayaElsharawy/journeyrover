@@ -1,16 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Nunito_Sans, Poetsen_One } from "next/font/google";
+import { Nunito_Sans, Poetsen_One } from "next/font/google";
+
 import "./globals.css";
-
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
+import TanstackProvider from "@/providers/tanstack-provider";
 
 const nunito = Nunito_Sans({ subsets: ['latin'], variable: '--font-nunito' });
 const poetsen = Poetsen_One({
@@ -34,7 +26,10 @@ export default function RootLayout({
       <body
         className={` ${nunito.variable} ${poetsen.variable} antialiased  bg-[#fcf8f7] relative`}
       >
-        {children}
+        <TanstackProvider>
+
+          {children}
+        </TanstackProvider>
       </body>
     </html>
   );
