@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` ${nunito.variable} ${poetsen.variable} antialiased  bg-[#fbf6f5] relative`}
+        className={` ${nunito.variable} ${poetsen.variable} antialiased  bg-[#fcf8f7] relative`}
       >
         {children}
       </body>
