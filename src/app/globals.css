@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
 @import "tailwindcss";
 
@@ -15,7 +14,6 @@
   --font-poetsen: "Poetsen One";
   --bg-opacity: 0.5;
   --primary: #f1764d
-
 }
 
 @media (prefers-color-scheme: dark) {
@@ -38,9 +36,21 @@ body {
 
 @keyframes animateImg {
   0% {
-    transform: rotate(0) translate(-10px) rotate(0) ;
+    transform: rotate(0) translate(-10px) rotate(0);
   }
+
   100% {
     transform: rotate(360deg) translate(-10px) rotate(-360deg);
   }
+}
+
+
+.world-map path {
+  fill: lightgray;
+  stroke: white;
+  cursor: pointer;
+}
+
+path:hover {
+  fill: #f1764db5;
 }
