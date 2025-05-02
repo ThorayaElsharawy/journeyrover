@@ -46,7 +46,7 @@ body {
 
 
 .world-map path {
-  fill: lightgray;
+  /* fill: lightgray; */
   stroke: white;
   cursor: pointer;
 }
