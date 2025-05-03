@@ -1,3 +1,4 @@
+import Active from "@/components/active";
 import Hero from "@/components/hero";
 import MostActiveDest from "@/components/most-active-dest";
 import Nav from "@/components/nav";
@@ -19,7 +20,7 @@ export default function Home() {
 
       </div>
       <MostActiveDest />
-
+      <Active />
     </div>
   );
 }

@@ -56,7 +56,7 @@ export default function TopDestination() {
 
     return (
         <div className="mb-10">
-            <h2 className="font-bold text-3xl">Top Destinations</h2>
+            <h2 className="font-bold text-3xl">Top Places</h2>
             <div className='space-x-10 text-center py-5'>
                 <motion.button
                     onClick={prevSlide}

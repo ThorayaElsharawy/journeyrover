@@ -44,13 +44,67 @@ body {
   }
 }
 
-
 .world-map path {
-  /* fill: lightgray; */
   stroke: white;
   cursor: pointer;
+
 }
 
-path:hover {
+.china-map path {
+  fill: lightgray;
+  stroke: white;
+}
+
+.world-map path:hover {
   fill: #f1764db5;
+}
+
+/* tspan {
+  font-size: 7px;
+} */
+
+text.tp {
+  font-size: 9px;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  writing-mode: lr-tb;
+  text-anchor: middle;
+  fill: #000000;
+  fill-opacity: 1;
+  stroke: none;
+  stroke-width: 1px;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  stroke-opacity: 1;
+  /* font-family: Bitstream Vera Sans */
+}
+
+text.tc {
+  font-size: 6.5px;
+  font-style: normal;
+  font-weight: normal;
+  fill: #000000;
+  fill-opacity: 1;
+  stroke: none;
+  stroke-width: 1px;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  stroke-opacity: 1;
+  /* font-family: Bitstream Vera Sans */
+}
+
+text.tsar {
+  font-size: 8px;
+  font-style: normal;
+  font-weight: normal;
+  writing-mode: lr-tb;
+  fill: #000000;
+  fill-opacity: 1;
+  stroke: none;
+  stroke-width: 1px;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  stroke-opacity: 1;
+  /* font-family: Bitstream Vera Sans */
 }
