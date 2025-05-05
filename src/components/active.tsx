@@ -2,6 +2,8 @@ import React from 'react'
 import Container from './container'
 import { MdOutlineArrowOutward } from 'react-icons/md'
 import China from './maps/china'
+import Map from './maps/map'
+import Emirates from './maps/emirates'
 
 export default function Active() {
     return (
@@ -23,7 +25,7 @@ export default function Active() {
                         <MdOutlineArrowOutward />
                     </div>
                     <div>
-
+                        {/* <Map /> */}
                     </div>
                 </div>
                 <div className='w-[49%] border border-[#f1764db5] rounded-lg p-3 bg-[#f1764db5]'>
@@ -41,7 +43,7 @@ export default function Active() {
                         <MdOutlineArrowOutward />
                     </div>
                     <div>
-
+                        <Emirates />
                     </div>
                 </div>
             </div>

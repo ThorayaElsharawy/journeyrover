@@ -59,9 +59,20 @@ body {
   fill: #f1764db5;
 }
 
+.map path {
+  stroke: white;
+  fill: lightgray;
+}
+
 /* tspan {
   font-size: 7px;
 } */
+
+.emirates path {
+  fill: lightgray;
+  stroke: white;
+
+}
 
 text.tp {
   font-size: 9px;
