@@ -5,6 +5,7 @@ import China from './maps/china'
 import Map from './maps/map'
 import Emirates from './maps/emirates'
 import London from './maps/london'
+import Spain from './maps/spain'
 
 export default function Active() {
     return (
@@ -22,11 +23,12 @@ export default function Active() {
                 </div>
                 <div className='w-[49%] border border-[#f1764db5] rounded-lg p-3 bg-[#f1764db5]'>
                     <div className='text-white flex items-center justify-between'>
-                        <h2 className='text-lg font-bold'>Thailand</h2>
+                        <h2 className='text-lg font-bold'>Spain</h2>
                         <MdOutlineArrowOutward />
                     </div>
                     <div>
                         {/* <Map /> */}
+                        <Spain />
                     </div>
                 </div>
                 <div className='w-[49%] border border-[#f1764db5] rounded-lg p-3 bg-[#f1764db5]'>

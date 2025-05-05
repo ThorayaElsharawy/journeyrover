@@ -79,6 +79,12 @@ body {
   stroke: white;
 }
 
+.spain-map path {
+  fill: lightgray;
+  stroke: white;
+
+}
+
 text.tp {
   font-size: 9px;
   font-style: normal;
