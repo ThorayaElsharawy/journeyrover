@@ -64,14 +64,19 @@ body {
   fill: lightgray;
 }
 
-/* tspan {
-  font-size: 7px;
-} */
+.london path {
+  fill: lightgray;
+
+}
 
 .emirates path {
   fill: lightgray;
   stroke: white;
+}
 
+.london path {
+  /* fill: lightgray; */
+  stroke: white;
 }
 
 text.tp {
