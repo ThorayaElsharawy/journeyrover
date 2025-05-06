@@ -439,7 +439,7 @@ export default function China() {
                                 id="taiwan_area" fill="#eecc77" /></g></g></g></g>
 
             <g
-            // style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;strokeWidth:2.18260646px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+            // style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;strokeWidth:2.18260646px;strokeLinecap:butt;stroke-linejoin:miter;stroke-opacity:1"
             >
                 <path d="M 432.65371,437.62047 L 434.71375,436.98403" id="path2591" />
                 <path d="M 504.30824,383.04914 L 506.36828,382.4127" id="path3363" />

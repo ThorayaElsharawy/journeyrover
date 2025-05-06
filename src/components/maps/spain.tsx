@@ -6,7 +6,7 @@ export default function Spain() {
         <svg
             fill="#6f9c76"
             height="100%"
-            stroke-linecap="round"
+            strokeLinecap="round"
             viewBox="200 0 800 650"
             width="100%"
             xmlns="http://www.w3.org/2000/svg"
@@ -62,62 +62,62 @@ export default function Spain() {
             </g>
 
             <g id="label_points">
-                <text x="712.4" y="92.8" fill="black" font-size="10">Navarre, Chartered Community of</text>
+                <text x="712.4" y="92.8" fill="black" fontSize="10">Navarre, Chartered Community of</text>
                 <g>
                     <circle cx="664" cy="75" r={2} fill='red' />
                     <circle cx="664" cy="75" r="3" fill="#FF2222">
                         <animate attributeName="r" values="6; 12; 6" dur="0.8s" repeatCount="indefinite" />
                         <animate attributeName="opacity" values="1; 0; 1" dur="0.8s" repeatCount="indefinite" />
                     </circle>
-                    <text x="674.1" y="79.7" fill="black" font-size="10">Basque Country</text>
+                    <text x="674.1" y="79.7" fill="black" fontSize="10">Basque Country</text>
                 </g>
-                <text x="678.5" y="122.1" fill="black" font-size="10">La Rioja</text>
+                <text x="678.5" y="122.1" fill="black" fontSize="10">La Rioja</text>
                 <g>
                     <circle cx="841" cy="140" r={2} fill='red' />
                     <circle cx="841" cy="140" r="3" fill="#FF2222">
                         <animate attributeName="r" values="6; 12; 6" dur="0.8s" repeatCount="indefinite" />
                         <animate attributeName="opacity" values="1; 0; 1" dur="0.8s" repeatCount="indefinite" />
                     </circle>
-                    <text x="820.2" y="160.6" fill="black" font-size="10">Catalonia</text>
+                    <text x="820.2" y="160.6" fill="black" fontSize="10">Catalonia</text>
                 </g>
-                <text x="730.6" y="165.5" fill="black" font-size="10">Aragon</text>
-                <text x="510.5" y="288.2" fill="black" font-size="10">Extremadura</text>
-                <text x="440.1" y="99.5" fill="black" font-size="10">Galicia</text>
-                <text x="558.4" y="151" fill="black" font-size="10">Castile and León</text>
+                <text x="730.6" y="165.5" fill="black" fontSize="10">Aragon</text>
+                <text x="510.5" y="288.2" fill="black" fontSize="10">Extremadura</text>
+                <text x="440.1" y="99.5" fill="black" fontSize="10">Galicia</text>
+                <text x="558.4" y="151" fill="black" fontSize="10">Castile and León</text>
                 <g>
                     <circle cx="750" cy="270" r={2} fill='red' />
                     <circle cx="750" cy="270" r="3" fill="#FF2222">
                         <animate attributeName="r" values="6; 12; 6" dur="0.8s" repeatCount="indefinite" />
                         <animate attributeName="opacity" values="1; 0; 1" dur="0.8s" repeatCount="indefinite" />
                     </circle>
-                    <text x="735.1" y="285.8" fill="black" font-size="10">Valencian Community</text>
+                    <text x="735.1" y="285.8" fill="black" fontSize="10">Valencian Community</text>
                 </g>
-                <text x="700.9" y="353.6" fill="black" font-size="10">Region of Murcia</text>
+                <text x="700.9" y="353.6" fill="black" fontSize="10">Region of Murcia</text>
                 <g>
                     <circle cx="584" cy="360" r={2} fill='red' />
                     <circle cx="584" cy="360" r="3" fill="#FF2222">
                         <animate attributeName="r" values="6; 12; 6" dur="0.8s" repeatCount="indefinite" />
                         <animate attributeName="opacity" values="1; 0; 1" dur="0.8s" repeatCount="indefinite" />
                     </circle>
-                    <text x="565.7" y="376" fill="black" font-size="10">Andalusia</text>
+                    <text x="565.7" y="376" fill="black" fontSize="10">Andalusia</text>
                 </g>
-                <text x="522.7" y="70.1" fill="black" font-size="10">Asturias</text>
-                <text x="600.5" y="74.3" fill="black" font-size="10">Cantabria</text>
-                <text x="300.3" y="540.8" fill="black" font-size="10">Canary Islands</text>
-                <text x="899.3" y="266.8" fill="black" font-size="10">Balearic Islands</text>
-                <text x="620.3" y="277.2" fill="black" font-size="10">Castile-La Mancha</text>
+                <text x="522.7" y="70.1" fill="black" fontSize="10">Asturias</text>
+                <text x="600.5" y="74.3" fill="black" fontSize="10">Cantabria</text>
+                <text x="300.3" y="540.8" fill="black" fontSize="10">Canary Islands</text>
+                <text x="899.3" y="266.8" fill="black" fontSize="10">Balearic Islands</text>
+                <text x="620.3" y="277.2" fill="black" fontSize="10">Castile-La Mancha</text>
                 <g>
                     <circle cx="627" cy="205" r={2} fill='red' />
                     <circle cx="627" cy="205" r="3" fill="#FF2222">
                         <animate attributeName="r" values="6; 12; 6" dur="0.8s" repeatCount="indefinite" />
                         <animate attributeName="opacity" values="1; 0; 1" dur="0.8s" repeatCount="indefinite" />
                     </circle>
-                    <text x="620.2" y="219.2" fill="black" font-size="10">Community</text>
-                    <text x="620.2" y="230" fill="black" font-size="10">of Madrid</text>
+                    <text x="620.2" y="219.2" fill="black" fontSize="10">Community</text>
+                    <text x="620.2" y="230" fill="black" fontSize="10">of Madrid</text>
 
                 </g>
-                <text x="563.3" y="456.9" fill="black" font-size="10">Ceuta</text>
-                <text x="660.4" y="486.7" fill="black" font-size="10">Melilla</text>
+                <text x="563.3" y="456.9" fill="black" fontSize="10">Ceuta</text>
+                <text x="660.4" y="486.7" fill="black" fontSize="10">Melilla</text>
             </g>
 
         </svg>

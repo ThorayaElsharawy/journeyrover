@@ -11,7 +11,10 @@ export default function Hero() {
         <section className=' h-full relative lg:py-24 text-black'>
             <div className='grid md:grid-cols-[38%_1fr] items-center justify-between'>
                 <div className='h-full py-10 lg:py-24 order-2 md:order-1'>
-                    <h3 className='text-[40px] lg:text-[50px] font-bold -tracking-[2px]'>Discover the World's <span className='text-[#f1764d]'>Hidden</span> Wonders</h3>
+                    <h3 className='text-[40px] lg:text-[50px] font-bold -tracking-[2px]'>Discover the World's
+                        <span className='text-[#f1764d]'>Hidden</span>
+                        Wonders
+                    </h3>
                     <p className='mt-2 max-w-[400px]'>Find the unloue moments and niaden gems that ignite unforgettable experiences.
                         From rare encounters to remarkable destinations.
                         we nelo vou uncover the soark that turns every trip into a cherished story.</p>
@@ -24,11 +27,11 @@ export default function Hero() {
                         height={400}
                         alt='airplane'
                         initial={{ scale: 0, x: -400 }}  // Start small
-                        animate={{ scale: 1, x: -10 }} 
+                        animate={{ scale: 1, x: -10 }}
                         transition={{ duration: 4 }}
                         className='w-[780px]'
                         onAnimationComplete={() => document.querySelector('#hero')?.classList.add('hero-img')}
-                        />
+                    />
                 </div>
             </div>
 

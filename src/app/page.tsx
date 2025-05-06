@@ -1,4 +1,5 @@
-import Active from "@/components/active";
+import ActiveCites from "@/components/active-cites";
+import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import MostActiveDest from "@/components/most-active-dest";
 import Nav from "@/components/nav";
@@ -20,7 +21,8 @@ export default function Home() {
 
       </div>
       <MostActiveDest />
-      <Active />
+      <ActiveCites />
+      <Footer />
     </div>
   );
 }

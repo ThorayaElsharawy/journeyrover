@@ -646,23 +646,23 @@ export default function London() {
             </g> */}
             <g id="numbers">
                 <text transform="matrix(1 0 0 1 168.031 370.4514)" fontSize={7} fontWeight='700' >Sutton</text>
-                <text transform="matrix(1 0 0 1 256.031 378.4514)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>Croydon</text>
-                <text transform="matrix(1 0 0 1 239.031 -22.5486)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>Enfield</text>
-                <text transform="matrix(1 0 0 1 227.031 53.4514)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>Haringey</text>
+                <text transform="matrix(1 0 0 1 256.031 378.4514)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>Croydon</text>
+                <text transform="matrix(1 0 0 1 239.031 -22.5486)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>Enfield</text>
+                <text transform="matrix(1 0 0 1 227.031 53.4514)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>Haringey</text>
 
-                <text transform="matrix(1 0 0 1 300.031 55.4514)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>Waltham</text>
-                <text transform="matrix(1 0 0 1 300.031 65.4514)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>forest</text>
+                <text transform="matrix(1 0 0 1 300.031 55.4514)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>Waltham</text>
+                <text transform="matrix(1 0 0 1 300.031 65.4514)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>forest</text>
 
-                <text transform="matrix(1 0 0 1 352.031 143.4514)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>Newham</text>
-                <text transform="matrix(1 0 0 1 377.031 60.4514)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>Redbridge</text>
+                <text transform="matrix(1 0 0 1 352.031 143.4514)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>Newham</text>
+                <text transform="matrix(1 0 0 1 377.031 60.4514)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>Redbridge</text>
 
                 <g>
-                    <text transform="matrix(1 0 0 1 420.031 120.4514)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>Barking and</text>
-                    <text transform="matrix(1 0 0 1 420.031 130.4514)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>Dagenham</text>
+                    <text transform="matrix(1 0 0 1 420.031 120.4514)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>Barking and</text>
+                    <text transform="matrix(1 0 0 1 420.031 130.4514)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>Dagenham</text>
                 </g>
 
-                <text transform="matrix(1 0 0 1 515.031 87.4514)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>Havering</text>
-                <text transform="matrix(1 0 0 1 436.031 236.4514)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>Bexley</text>
+                <text transform="matrix(1 0 0 1 515.031 87.4514)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>Havering</text>
+                <text transform="matrix(1 0 0 1 436.031 236.4514)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>Bexley</text>
 
                 <g>
                     <circle cx="370" cy="195" r={2} fill='red' />
@@ -670,34 +670,34 @@ export default function London() {
                         <animate attributeName="r" values="6; 12; 6" dur="0.8s" repeatCount="indefinite" />
                         <animate attributeName="opacity" values="1; 0; 1" dur="0.8s" repeatCount="indefinite" />
                     </circle>
-                    <text transform="matrix(1 0 0 1 358 212)" font-family="'ArialMT'" fontSize={7} fontWeight='700' >Greenwich</text>
+                    <text transform="matrix(1 0 0 1 358 212)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700' >Greenwich</text>
                 </g>
-                <text transform="matrix(1 0 0 1 305.031 258.4514)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>Lewisham</text>
-                <text transform="matrix(1 0 0 1 353.031 344.4514)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>Bromley</text>
-                <text transform="matrix(1 0 0 1 -72.969 108.4514)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>Hillingdon</text>
-                <text transform="matrix(1 0 0 1 18.031 44.4514)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>Harrow</text>
-                <text transform="matrix(1 0 0 1 135.031 24.4514)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>Barnet</text>
-                <text transform="matrix(1 0 0 1 153.031 307.4514)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>Merton</text>
+                <text transform="matrix(1 0 0 1 305.031 258.4514)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>Lewisham</text>
+                <text transform="matrix(1 0 0 1 353.031 344.4514)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>Bromley</text>
+                <text transform="matrix(1 0 0 1 -72.969 108.4514)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>Hillingdon</text>
+                <text transform="matrix(1 0 0 1 18.031 44.4514)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>Harrow</text>
+                <text transform="matrix(1 0 0 1 135.031 24.4514)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>Barnet</text>
+                <text transform="matrix(1 0 0 1 153.031 307.4514)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>Merton</text>
                 <g>
-                    <text transform="matrix(1 0 0 1 80.031 300.4514)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>Kingston</text>
-                    <text transform="matrix(1 0 0 1 80.031 310.4514)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>upon</text>
-                    <text transform="matrix(1 0 0 1 80.031 320.4514)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>Thames</text>
+                    <text transform="matrix(1 0 0 1 80.031 300.4514)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>Kingston</text>
+                    <text transform="matrix(1 0 0 1 80.031 310.4514)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>upon</text>
+                    <text transform="matrix(1 0 0 1 80.031 320.4514)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>Thames</text>
                 </g>
-                <text transform="matrix(1 0 0 1 66.031 250.4514)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>Richmond</text>
-                <text transform="matrix(1 0 0 1 0.031 223.4514)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>Hounslow</text>
-                <text transform="matrix(1 0 0 1 28.031 159.4514)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>Ealing</text>
-                <text transform="matrix(1 0 0 1 85.031 108.4514)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>Brent</text>
+                <text transform="matrix(1 0 0 1 66.031 250.4514)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>Richmond</text>
+                <text transform="matrix(1 0 0 1 0.031 223.4514)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>Hounslow</text>
+                <text transform="matrix(1 0 0 1 28.031 159.4514)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>Ealing</text>
+                <text transform="matrix(1 0 0 1 85.031 108.4514)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>Brent</text>
                 <g>
                     <circle cx="184" cy="100" r={2} fill='red' />
                     <circle cx="184" cy="100" r="3" fill="#FF2222">
                         <animate attributeName="r" values="6; 12; 6" dur="0.8s" repeatCount="indefinite" />
                         <animate attributeName="opacity" values="1; 0; 1" dur="0.8s" repeatCount="indefinite" />
                     </circle>
-                    <text transform="matrix(1 0 0 1 174.031 113.4514)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>Camden</text>
+                    <text transform="matrix(1 0 0 1 174.031 113.4514)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>Camden</text>
                 </g>
 
-                <text transform="matrix(1 0 0 1 223.031 117.4514)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>Islington</text>
-                <text transform="matrix(1 0 0 1 272.031 109.4514)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>Hackney</text>
+                <text transform="matrix(1 0 0 1 223.031 117.4514)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>Islington</text>
+                <text transform="matrix(1 0 0 1 272.031 109.4514)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>Hackney</text>
 
                 <g>
                     <circle cx="290" cy="140" r={2} fill='red' />
@@ -705,7 +705,7 @@ export default function London() {
                         <animate attributeName="r" values="6; 12; 6" dur="0.8s" repeatCount="indefinite" />
                         <animate attributeName="opacity" values="1; 0; 1" dur="0.8s" repeatCount="indefinite" />
                     </circle>
-                    <text transform="matrix(1 0 0 1 270 154)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>Tower Hamlets</text>
+                    <text transform="matrix(1 0 0 1 270 154)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>Tower Hamlets</text>
                 </g>
 
                 <g>
@@ -714,7 +714,7 @@ export default function London() {
                         <animate attributeName="r" values="6; 12; 6" dur="0.8s" repeatCount="indefinite" />
                         <animate attributeName="opacity" values="1; 0; 1" dur="0.8s" repeatCount="indefinite" />
                     </circle>
-                    <text transform="matrix(1 0 0 1 245.031 195)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>Southwark</text>
+                    <text transform="matrix(1 0 0 1 245.031 195)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>Southwark</text>
                 </g>
 
                 <g>
@@ -723,13 +723,13 @@ export default function London() {
                         <animate attributeName="r" values="6; 12; 6" dur="0.8s" repeatCount="indefinite" />
                         <animate attributeName="opacity" values="1; 0; 1" dur="0.8s" repeatCount="indefinite" />
                     </circle>
-                    <text transform="matrix(1 0 0 1 215 248)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>Lambeth</text>
+                    <text transform="matrix(1 0 0 1 215 248)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>Lambeth</text>
                 </g>
 
-                <text transform="matrix(1 0 0 1 140.031 251.4514)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>Wandsworth</text>
+                <text transform="matrix(1 0 0 1 140.031 251.4514)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>Wandsworth</text>
                 <g>
-                    <text transform="matrix(1 0 0 1 110.031 165.4514)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>Hammersmith</text>
-                    <text transform="matrix(1 0 0 1 115.031 175.4514)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>and Fulham</text>
+                    <text transform="matrix(1 0 0 1 110.031 165.4514)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>Hammersmith</text>
+                    <text transform="matrix(1 0 0 1 115.031 175.4514)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>and Fulham</text>
 
                 </g>
                 <g>
@@ -738,8 +738,8 @@ export default function London() {
                         <animate attributeName="r" values="6; 12; 6" dur="0.8s" repeatCount="indefinite" />
                         <animate attributeName="opacity" values="1; 0; 1" dur="0.8s" repeatCount="indefinite" />
                     </circle>
-                    <text transform="matrix(1 0 0 1 158.031 180.4514)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>Kensington</text>
-                    <text transform="matrix(1 0 0 1 158.031 190.4514)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>and Chelsea</text>
+                    <text transform="matrix(1 0 0 1 158.031 180.4514)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>Kensington</text>
+                    <text transform="matrix(1 0 0 1 158.031 190.4514)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>and Chelsea</text>
                 </g>
                 <g>
                     <circle cx="190" cy="140" r={2} fill='red' />
@@ -747,7 +747,7 @@ export default function London() {
                         <animate attributeName="r" values="6; 12; 6" dur="0.8s" repeatCount="indefinite" />
                         <animate attributeName="opacity" values="1; 0; 1" dur="0.8s" repeatCount="indefinite" />
                     </circle>
-                    <text transform="matrix(1 0 0 1 170.031 155.4514)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>Westminster</text>
+                    <text transform="matrix(1 0 0 1 170.031 155.4514)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>Westminster</text>
                 </g>
                 <g>
                     <circle cx="250" cy="150" r={2} fill='red' />
@@ -755,7 +755,7 @@ export default function London() {
                         <animate attributeName="r" values="6; 12; 6" dur="0.8s" repeatCount="indefinite" />
                         <animate attributeName="opacity" values="1; 0; 1" dur="0.8s" repeatCount="indefinite" />
                     </circle>
-                    <text transform="matrix(1 0 0 1 240.031 157.4514)" font-family="'ArialMT'" fontSize={7} fontWeight='700'>London</text>
+                    <text transform="matrix(1 0 0 1 240.031 157.4514)" fontFamily="'ArialMT'" fontSize={7} fontWeight='700'>London</text>
                 </g>
 
             </g>
