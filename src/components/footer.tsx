@@ -9,8 +9,6 @@ export default function Footer() {
     return (
         <footer className='bg-[#19232d] py-24 relative'>
             <Image src={footerImg} alt='footer img' width={600} height={200} className='w-[70%] absolute h-full top-0 right-0' />
-            {/* <div className="bg-[url(@/assets/footer-img.png)] bg-no-repeat bg-cover absolute w-[100%] h-[200px] right-0" /> */}
-
             <Container>
                 <div className='grid md:grid-cols-[40%_1fr] gap-12 md:gap-0 w-full items-center justify-between'>
                     <div className='md:justify-self-start'>

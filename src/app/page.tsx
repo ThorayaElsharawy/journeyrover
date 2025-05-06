@@ -4,6 +4,7 @@ import Hero from "@/components/hero";
 import MostActiveDest from "@/components/most-active-dest";
 import Nav from "@/components/nav";
 import TopDestination from "@/components/top-destination";
+import TopVacationDestination from "@/components/top-vacation-destination";
 
 
 export default function Home() {
@@ -18,10 +19,10 @@ export default function Home() {
       </div>
       <div className="mx-auto max-w-screen-xl px-6 py-12 md:px-12 md:py-16 lg:py-2 my-auto">
         <TopDestination />
-
       </div>
       <MostActiveDest />
       <ActiveCites />
+      <TopVacationDestination />
       <Footer />
     </div>
   );
