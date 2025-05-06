@@ -6,8 +6,8 @@ export default function Nav() {
     return (
         <nav>
             <div className="flex items-center ">
-                <Image src={logo} width={80} height={80} alt="logo" />
-                <h2 className="text-2xl uppercase font-poetsen">Journey Rover</h2>
+                <Image src={logo} width={80} height={80} alt="logo" className='brightness-0 invert-100' />
+                <h2 className="text-2xl uppercase font-poetsen text-white">Journey Rover</h2>
             </div>
         </nav>
     )

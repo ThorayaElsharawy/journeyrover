@@ -1,15 +1,5 @@
 import React from 'react'
-import Container from './container'
-import place1 from '@/assets/place1.jpg'
-import place2 from '@/assets/place2.jpg'
-import place3 from '@/assets/place3.jpg'
-// import place4 from '@/assets/place4.jpeg'
-// import place5 from '@/assets/place5.jpg'
-import place6 from '@/assets/place6.jpg'
-import place7 from '@/assets/place7.jpg'
-import place8 from '@/assets/place8.jpg'
-import place9 from '@/assets/place9.jpg'
-import Image from 'next/image'
+import Container from '@/components/container'
 
 export default function TopVacationDestination() {
     return (

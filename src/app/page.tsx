@@ -10,8 +10,8 @@ import TopVacationDestination from "@/components/top-vacation-destination";
 export default function Home() {
   return (
     <div>
-      <div className="h-full relative">
-        <div className="bg-[url(@/assets/World_blank_map_countries.png)] bg-no-repeat bg-cover absolute inset-0 opacity-20 -z-20" />
+      <div className="h-full relative bg-[#19232d]">
+        <div className="bg-transparent bg-[url(@/assets/World_blank_map_countries.png)] bg-no-repeat bg-cover absolute opacity-15 inset-0  " />
         <div className="mx-auto max-w-screen-xl px-6 md:px-12 py-2 my-auto ">
           <Nav />
           <Hero />

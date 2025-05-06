@@ -16,7 +16,7 @@ export default function Tooltipe({ hoveredArea }: { hoveredArea: string }) {
             <img className='-mt-10 w-[120px] h-[100px] ml-auto rounded-3xl shadow-[0_0_5px_#88726bb5]' src={country?.flags?.png} alt="" />
             <div className='border-b pb-2 border-gray-300'>
                 <h2 className='text-xl mb-2 font-bold'>{country?.name?.common}</h2>
-                <h1 className='text-[#FB0808] font-semibold'>Federal Republic of Germany</h1>
+                <h1 className='text-[#a46602] font-semibold'>Federal Republic of Germany</h1>
             </div>
 
             <ul className='space-y-0.5 mt-5'>

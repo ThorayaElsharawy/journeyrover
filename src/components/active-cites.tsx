@@ -8,20 +8,20 @@ import Spain from './maps/spain'
 
 export default function ActiveCites() {
     return (
-        <Container className='py-10'>
+        <Container className='py-10 '>
             <h1 className='font-bold text-3xl'>Most Active Cites</h1>
             <div className='grid md:grid-cols-2 gap-3 items-center mt-5'>
-                <div className='h-full border border-[#f1764db5] rounded-lg p-3 bg-[#f1764db5]'>
-                    <div className='text-white flex items-center justify-between'>
-                        <h2 className='text-lg font-bold'>China</h2>
+                <div className='h-full rounded-lg p-3 bg-[#3b444c]'>
+                    <div className='text-[#dcbb87] flex items-center justify-between'>
+                        <h2 className='text-lg font-bold '>China</h2>
                         <MdOutlineArrowOutward />
                     </div>
                     <div>
                         <China />
                     </div>
                 </div>
-                <div className='h-full border border-[#f1764db5] rounded-lg p-3 bg-[#f1764db5]'>
-                    <div className='text-white flex items-center justify-between'>
+                <div className='h-full rounded-lg p-3 bg-[#3b444c]'>
+                    <div className='text-[#dcbb87] flex items-center justify-between'>
                         <h2 className='text-lg font-bold'>Spain</h2>
                         <MdOutlineArrowOutward />
                     </div>
@@ -29,8 +29,8 @@ export default function ActiveCites() {
                         <Spain />
                     </div>
                 </div>
-                <div className='h-full border border-[#f1764db5] rounded-lg p-3 bg-[#f1764db5]'>
-                    <div className='text-white flex items-center justify-between'>
+                <div className='h-full rounded-lg p-3 bg-[#3b444c]'>
+                    <div className='text-[#dcbb87] flex items-center justify-between'>
                         <h2 className='text-lg font-bold'>London</h2>
                         <MdOutlineArrowOutward />
                     </div>
@@ -38,8 +38,8 @@ export default function ActiveCites() {
                         <London />
                     </div>
                 </div>
-                <div className='h-full border border-[#f1764db5] rounded-lg p-3 bg-[#f1764db5]'>
-                    <div className='text-white flex items-center justify-between'>
+                <div className='h-full rounded-lg p-3 bg-[#3b444c]'>
+                    <div className='text-[#dcbb87] flex items-center justify-between'>
                         <h2 className='text-lg font-bold'>United Arab Emirates </h2>
                         <MdOutlineArrowOutward />
                     </div>

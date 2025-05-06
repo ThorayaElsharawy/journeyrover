@@ -55,20 +55,20 @@ export default function TopDestination() {
     }, [current]);
 
     return (
-        <div className="mb-10">
+        <div className="my-10">
             <h2 className="font-bold text-3xl">Top Places</h2>
             <div className='space-x-10 text-center py-5'>
                 <motion.button
                     onClick={prevSlide}
                     whileTap={{ scale: 0.9 }}
-                    className='cursor-pointer border-1 border-[#f1764d] p-1.5 rounded-full rotate-180'>
-                    <IoAirplaneSharp className="text-[#f1764d] " />
+                    className='cursor-pointer border-1 border-[#dcbb87] p-1.5 rounded-full rotate-180'>
+                    <IoAirplaneSharp className="text-[#dcbb87] " />
                 </motion.button>
                 <motion.button
                     onClick={nextSlide}
                     whileTap={{ scale: 0.9 }}
-                    className='cursor-pointer border-1 border-[#f1764d] p-1.5 rounded-full'>
-                    <IoAirplaneSharp className="text-[#f1764d] " />
+                    className='cursor-pointer border-1 border-[#dcbb87] p-1.5 rounded-full'>
+                    <IoAirplaneSharp className="text-[#dcbb87] " />
                 </motion.button>
             </div>
             <div className='overflow-hidden '>

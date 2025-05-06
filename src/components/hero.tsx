@@ -8,11 +8,11 @@ const MotionImage = motion(Image);
 
 export default function Hero() {
     return (
-        <section className=' h-full relative lg:py-24 text-black'>
+        <section className='h-full relative lg:py-20 text-white'>
             <div className='grid md:grid-cols-[38%_1fr] items-center justify-between'>
                 <div className='h-full py-10 lg:py-24 order-2 md:order-1'>
                     <h3 className='text-[40px] lg:text-[50px] font-bold -tracking-[2px]'>Discover the World's
-                        <span className='text-[#f1764d]'>Hidden</span>
+                        <span className='text-[#dcbb87] px-2'>Hidden</span>
                         Wonders
                     </h3>
                     <p className='mt-2 max-w-[400px]'>Find the unloue moments and niaden gems that ignite unforgettable experiences.

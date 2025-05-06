@@ -7,7 +7,7 @@ import Container from './container'
 
 export default function Footer() {
     return (
-        <footer className='bg-[#19232d] py-24 relative'>
+        <footer className='bg-[#3b444c] py-24 relative'>
             <Image src={footerImg} alt='footer img' width={600} height={200} className='w-[70%] absolute h-full top-0 right-0' />
             <Container>
                 <div className='grid md:grid-cols-[40%_1fr] gap-12 md:gap-0 w-full items-center justify-between'>
