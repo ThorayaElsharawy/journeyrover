@@ -21,7 +21,7 @@ const ORIGINAL_DESTIS = [
 
 const SLIDES = [...ORIGINAL_DESTIS, ...ORIGINAL_DESTIS]
 
-export default function TopDestination() {
+export default function TopPlaces() {
     const [current, setCurrent] = useState(0)
     const slideWidth = 300
     const [transition, setTransition] = useState(false)
@@ -61,14 +61,14 @@ export default function TopDestination() {
                 <motion.button
                     onClick={prevSlide}
                     whileTap={{ scale: 0.9 }}
-                    className='cursor-pointer border-1 border-[#dcbb87] p-1.5 rounded-full rotate-180'>
-                    <IoAirplaneSharp className="text-[#dcbb87] " />
+                    className='cursor-pointer border-1 border-[#dcbb87] p-1.5 rounded-full rotate-180 hover:bg-[#dcbb87] group transition-all'>
+                    <IoAirplaneSharp className="text-[#dcbb87] group-hover:text-white transition-all" />
                 </motion.button>
                 <motion.button
                     onClick={nextSlide}
                     whileTap={{ scale: 0.9 }}
-                    className='cursor-pointer border-1 border-[#dcbb87] p-1.5 rounded-full'>
-                    <IoAirplaneSharp className="text-[#dcbb87] " />
+                    className='cursor-pointer border-1 border-[#dcbb87] p-1.5 rounded-full hover:bg-[#dcbb87] group transition-all'>
+                    <IoAirplaneSharp className="text-[#dcbb87] group-hover:text-white transition-all" />
                 </motion.button>
             </div>
             <div className='overflow-hidden '>

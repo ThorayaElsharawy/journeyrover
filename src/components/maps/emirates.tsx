@@ -1,5 +1,15 @@
 import React from 'react'
 
+const CITES = [
+    { id: 'AEFU', name: 'Fujayrah', isActive: false, cx: 926.9, cy: 157.7, x: 926, y: 150 },
+    { id: 'AESH', name: 'Sharjah', isActive: true, cx: 843, cy: 220, x: 830, y: 240 },
+    { id: 'AERK', name: 'Ras Al Khaymah', isActive: false, cx: 889.7, cy: 106.9, x: 769, y: 106 },
+    { id: 'AEDU', name: 'Dubai', isActive: true, cx: 762, cy: 255, x: 742, y: 280 },
+    { id: 'AEAZ', name: 'Abu Dhabi', isActive: true, cx: 575, cy: 560, x: 555, y: 580 },
+    { id: 'AEUQ', name: 'Umm Al Qaywayn', isActive: false, cx: 832.3, cy: 154.2, x: 700, y: 140 },
+    { id: 'AEAJ', name: 'Ajman', isActive: false, cx: 790.7, cy: 175.8, x: 740, y: 175 },
+];
+
 export default function Emirates() {
     return (
         <svg baseProfile="tiny"
@@ -25,50 +35,20 @@ export default function Emirates() {
                 <path d="M786.2 164.7l0.2 0.1 2.2 1.6 3 0.6 1.9 0.9 2.9 1.9 2.1 0.8 11.4 2.1 1.9 0.8 0.9 1-2.5 7-1.8 3-1 0.9-1.3 0.3-16-0.9-6.6-1.4-5.7-2.1-4.3-2.8 0-0.1-0.1 0 2.8-3.8 1.1 0 0.9 2.5 1.1 0.2 1.1-1.6 0.8-2.5 1.3 1.4 2.6-7.8 1.1-2.1z m92.7 26.8l2.7 1.3 0.5 0.4 0.5 0.4 0.4 0.6 0.3 0.7 0.1 0.8-0.8 2.2-4.8 4-2.3-5.1 0.1-1.2 0.3-1.4 0.8-1 0.7-0.6 1.5-1.1z" id="AEAJ" name="Ajman">
                 </path>
             </g>
-            <g id="points">
-                <circle className="22.793638273547305|51.8100610685751" cx="90.9" cy="716.5" id="0" fill='red'>
-                </circle>
-                <circle className="24.17517668344435|54.217206250418755" cx="545.5" cy="432" id="1" fill='red'>
-                </circle>
-                <circle className="25.902099695815657|56.14292239589368" cx="909.1" cy="72.1" id="2" fill='red'>
-                </circle>
-            </g>
-            <g id="label_points">
-                <circle className="Fujayrah" cx="926.9" cy="157.7" id="AEFU" />
-
-                <circle className="Sharjah" cx="843" cy="220" r={2} id="AESH" fill='red' />
-                <circle cx="843" cy="220" r="3" fill="#FF2222">
-                    <animate attributeName="r" values="6; 12; 6" dur="0.8s" repeatCount="indefinite" />
-                    <animate attributeName="opacity" values="1; 0; 1" dur="0.8s" repeatCount="indefinite" />
-                </circle>
-
-                <circle className="Ras Al Khaymah" cx="889.7" cy="106.9" id="AERK" />
-
-                <circle className="Dubai" cx="762" cy="255" r={2} id="AEDU" fill='red' />
-                <circle cx="762" cy="255" r="3" fill="#FF2222">
-                    <animate attributeName="r" values="6; 12; 6" dur="0.8s" repeatCount="indefinite" />
-                    <animate attributeName="opacity" values="1; 0; 1" dur="0.8s" repeatCount="indefinite" />
-                </circle>
-                <circle className="Abu Dhabi" cx="575" cy="560" r={2} id="AEAZ" fill='red' />
-                <circle cx="575" cy="560" r="3" fill="#FF2222">
-                    <animate attributeName="r" values="6; 12; 6" dur="0.8s" repeatCount="indefinite" />
-                    <animate attributeName="opacity" values="1; 0; 1" dur="0.8s" repeatCount="indefinite" />
-                </circle>
-
-                <circle className="Umm Al Qaywayn" cx="832.3" cy="154.2" id="AEUQ">
-                </circle>
-                <circle className="Ajman" cx="790.7" cy="175.8" id="AEAJ">
-                </circle>
-            </g>
-            <text>
-                <tspan x='926' y='150'>Fujayrah</tspan>
-                <tspan x='830' y='240'>Sharjah</tspan>
-                <tspan x='769' y='106'>Ras Al Khaymah</tspan>
-                <tspan x='742' y='280'>Dubai</tspan>
-                <tspan x='555' y='580'>Abu Dhabi</tspan>
-                <tspan x='700' y='140'>Umm Al Qaywayn</tspan>
-                <tspan x='740' y='175'>Ajman</tspan>
-            </text>
-        </svg>
+            {CITES.map(city => (
+                <g key={city.id}>
+                    <text x={city.x} y={city.y}>{city.name}</text>
+                    {city.isActive && (
+                        <>
+                            <circle className="Sharjah" cx={city.cx} cy={city.cy} r={2} id={city.id} fill='red' />
+                            <circle cx={city.cx} cy={city.cy} r="3" fill="#FF2222">
+                                <animate attributeName="r" values="6; 12; 6" dur="0.8s" repeatCount="indefinite" />
+                                <animate attributeName="opacity" values="1; 0; 1" dur="0.8s" repeatCount="indefinite" />
+                            </circle>
+                        </>
+                    )}
+                </g>
+            ))}
+        </svg >
     )
 }
