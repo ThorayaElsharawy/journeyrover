@@ -8,7 +8,7 @@ const MotionImage = motion(Image);
 
 export default function Hero() {
     return (
-        <section className='h-full relative lg:py-20 text-white'>
+        <section className='h-full relative lg:py-20 text-black'>
             <div className='grid md:grid-cols-[38%_1fr] items-center justify-between'>
                 <div className='h-full py-10 lg:py-24 order-2 md:order-1'>
                     <h3 className='text-[40px] lg:text-[50px] font-bold -tracking-[2px]'>Discover the World's

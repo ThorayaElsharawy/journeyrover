@@ -3,6 +3,8 @@ import { Nunito_Sans, Poetsen_One } from "next/font/google";
 
 import "./globals.css";
 import TanstackProvider from "@/providers/tanstack-provider";
+import { Provider } from "react-redux";
+import StoreProvider from "@/store/store-provider";
 
 const nunito = Nunito_Sans({ subsets: ['latin'], variable: '--font-nunito' });
 const poetsen = Poetsen_One({
@@ -27,8 +29,9 @@ export default function RootLayout({
         className={` ${nunito.variable} ${poetsen.variable} antialiased  bg-[#fcf8f7] relative`}
       >
         <TanstackProvider>
-
-          {children}
+          <StoreProvider>
+            {children}
+          </StoreProvider>
         </TanstackProvider>
       </body>
     </html>
