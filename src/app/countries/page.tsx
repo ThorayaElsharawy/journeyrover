@@ -5,13 +5,13 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
 
-export default function page() {
+export default function Page() {
     const countries = useSelector((state: RootState) => state.countries)
     const dispatch = useDispatch<AppDispatch>()
 
     useEffect(() => {
         dispatch(fetchCountries())
-    }, [])
+    }, [dispatch])
 
     console.log(countries);
     

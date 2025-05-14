@@ -1,5 +1,6 @@
 import { getCountryDetails } from '@/services/country.services'
 import { useQuery } from '@tanstack/react-query'
+import Image from 'next/image'
 import React from 'react'
 
 export default function Tooltip({ hoveredArea }: { hoveredArea: string }) {
@@ -13,7 +14,8 @@ export default function Tooltip({ hoveredArea }: { hoveredArea: string }) {
     const country = data[0]
     return (
         <div className='absolute bottom-3 right-2 end-0 z-50 max-w-min lg:max-w-[250px]  w-full h-[270px] bg-white shadow-2xl p-2.5 rounded-lg border border-black/5'>
-            <img className='-mt-10 w-[120px] h-[100px] ml-auto rounded-3xl shadow-[0_0_5px_#88726bb5]' src={country?.flags?.png} alt="" />
+            <Image className='-mt-10 w-[120px] h-[100px] ml-auto rounded-3xl shadow-[0_0_5px_#88726bb5]' 
+            src={country?.flags?.png} alt="" />
             <div className='border-b pb-2 border-gray-300'>
                 <h2 className='text-xl mb-2 font-bold'>{country?.name?.common}</h2>
                 <h1 className='text-[#a46602] font-semibold'>Federal Republic of Germany</h1>

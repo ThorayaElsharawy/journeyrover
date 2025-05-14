@@ -8,8 +8,6 @@ import Australia from "@/assets/Australia.jpg"
 import { IoAirplaneSharp } from 'react-icons/io5';
 import { motion } from "framer-motion";
 
-const MotionImage = motion(Image);
-
 const ORIGINAL_DESTIS = [
     { id: 1, img: Vietnam, place: "Golden Bridge, Bà Nà Hills", country: "Vietnam" },
     { id: 2, img: Croatia, place: "Old Town of Dubrovnik", country: "Croatia" },

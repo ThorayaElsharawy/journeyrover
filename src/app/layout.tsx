@@ -3,7 +3,6 @@ import { Nunito_Sans, Poetsen_One } from "next/font/google";
 
 import "./globals.css";
 import TanstackProvider from "@/providers/tanstack-provider";
-import { Provider } from "react-redux";
 import StoreProvider from "@/store/store-provider";
 
 const nunito = Nunito_Sans({ subsets: ['latin'], variable: '--font-nunito' });

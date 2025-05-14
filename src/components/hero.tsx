@@ -19,7 +19,7 @@ export default function Hero() {
                             stiffness: 100,
                             damping: 10
                         }}
-                        className='text-[40px] lg:text-[50px] font-bold -tracking-[2px]'>Discover the World's
+                        className='text-[40px] lg:text-[50px] font-bold -tracking-[2px]'>Discover the World&rsquo;s
                         <span className='text-[#dcbb87] px-2'>Hidden</span>
                         Wonders
                     </motion.h3>

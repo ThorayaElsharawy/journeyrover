@@ -25,7 +25,7 @@ export const addFavorite = createAsyncThunk(
 )
 
 const favoriteSlice = createSlice({
-    initialState: [] as {}[],
+    initialState: [] as any,
     name: "favoriteSlice",
     reducers: {},
     extraReducers: (builder) => {
