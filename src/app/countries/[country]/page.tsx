@@ -4,10 +4,9 @@ export const metadata = {
     title: 'country | Journey Rover'
 }
 
-export default function Page({ params }: { params: { country: string } }) {
-    const { country } = params
-    console.log(country); // Works now
+export default async function Page({ params }: { params: { country: string } }) {
+    const { country } = await params
     return (
-        <>Hiiii</>
+        <>{country}</>
     )
 }
