@@ -1,5 +1,5 @@
 import React from 'react'
-import WorldMap from './world-map'
+import WorldMap from '@/components/world-map'
 
 export default function MostActiveDest() {
     return (
