@@ -83,13 +83,7 @@ export default function TopPlaces() {
                         <div
                             key={`${dest.id}-${index}`}
                             className='flex flex-col min-w-[280px]'>
-                            <MotionImage
-                                initial={{ scale: .95 }}
-                                whileHover={{ scale: 1 }}
-                                transition={{
-                                    type: 'spring',
-                                    // delay: .2
-                                }}
+                            <Image
                                 src={dest.img}
                                 width={200}
                                 height={200}

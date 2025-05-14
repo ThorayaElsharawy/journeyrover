@@ -2,7 +2,7 @@ import { getCountryDetails } from '@/services/country.services'
 import { useQuery } from '@tanstack/react-query'
 import React from 'react'
 
-export default function Tooltipe({ hoveredArea }: { hoveredArea: string }) {
+export default function Tooltip({ hoveredArea }: { hoveredArea: string }) {
     const { data } = useQuery({
         queryKey: ['countryName', hoveredArea],
         queryFn: () => getCountryDetails(hoveredArea),

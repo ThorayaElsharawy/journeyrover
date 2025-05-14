@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react'
-import Tooltipe from './tooltipe';
+import Tooltip from '@/components/tooltip';
 
 export default function WorldMap() {
     const [hoveredArea, setHoveredAreaId] = useState<string | null>(null);
@@ -960,7 +960,7 @@ export default function WorldMap() {
             </svg>
 
             {/* <MostActiveCountries /> */}
-            {hoveredArea && <Tooltipe hoveredArea={hoveredArea} />}
+            {hoveredArea && <Tooltip hoveredArea={hoveredArea} />}
         </div>
 
     );
