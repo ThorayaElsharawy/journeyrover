@@ -11,13 +11,30 @@ export default function Hero() {
         <section className='h-full relative lg:py-20 text-black'>
             <div className='grid md:grid-cols-[38%_1fr] items-center justify-between'>
                 <div className='h-full py-10 lg:py-24 order-2 md:order-1'>
-                    <h3 className='text-[40px] lg:text-[50px] font-bold -tracking-[2px]'>Discover the World's
+                    <motion.h3
+                        initial={{ opacity: 0, y: 100 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{
+                            type: 'spring',
+                            stiffness: 100,
+                            damping: 10
+                        }}
+                        className='text-[40px] lg:text-[50px] font-bold -tracking-[2px]'>Discover the World's
                         <span className='text-[#dcbb87] px-2'>Hidden</span>
                         Wonders
-                    </h3>
-                    <p className='mt-2 max-w-[400px]'>Find the unloue moments and niaden gems that ignite unforgettable experiences.
+                    </motion.h3>
+                    <motion.p
+                        initial={{ opacity: 0, y: 100 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{
+                            type: 'spring',
+                            stiffness: 100,
+                            damping: 10,
+                            delay: .4
+                        }}
+                        className='mt-2 max-w-[400px]'>Find the unloue moments and niaden gems that ignite unforgettable experiences.
                         From rare encounters to remarkable destinations.
-                        we nelo vou uncover the soark that turns every trip into a cherished story.</p>
+                        we nelo vou uncover the soark that turns every trip into a cherished story.</motion.p>
                 </div>
                 <div className='flex-1 pt-20 order-1 md:order-2'>
                     <MotionImage

@@ -66,23 +66,30 @@ export default function TopPlaces() {
                 </motion.button>
                 <motion.button
                     onClick={nextSlide}
-                    whileTap={{ scale: 0.9 }}
+                    initial={{ scale: 1 }}
+                    whileTap={{ scale: 0.7 }}
                     className='cursor-pointer border-1 border-[#dcbb87] p-1.5 rounded-full hover:bg-[#dcbb87] group transition-all'>
                     <IoAirplaneSharp className="text-[#dcbb87] group-hover:text-white transition-all" />
                 </motion.button>
             </div>
             <div className='overflow-hidden '>
                 <div
-                    className='flex gap-5 relative '
+                    className='flex gap-2 relative '
                     style={{
                         transform: `translateX(-${current * slideWidth}px)`,
                         transition: transition ? 'transform .3s ease-in-out' : 'none'
                     }}>
-                    {SLIDES.map((dest, index) => (
+                    {SLIDES.map((dest, index) => ( 
                         <div
                             key={`${dest.id}-${index}`}
                             className='flex flex-col min-w-[280px]'>
                             <MotionImage
+                                initial={{ scale: .95 }}
+                                whileHover={{ scale: 1 }}
+                                transition={{
+                                    type: 'spring',
+                                    // delay: .2
+                                }}
                                 src={dest.img}
                                 width={200}
                                 height={200}
