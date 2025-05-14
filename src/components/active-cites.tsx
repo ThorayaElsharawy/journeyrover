@@ -1,10 +1,10 @@
 import React from 'react'
 import Container from './container'
 import { MdOutlineArrowOutward } from 'react-icons/md'
-import China from './maps/china'
-import Emirates from './maps/emirates'
-import London from './maps/london'
-import Spain from './maps/spain'
+import China from '@/components//maps/china'
+import Emirates from '@/components/maps/emirates'
+import London from '@/components//maps/london'
+import Spain from '@/components//maps/spain'
 
 export default function ActiveCites() {
     return (
