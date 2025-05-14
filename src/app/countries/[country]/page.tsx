@@ -4,7 +4,9 @@ export const metadata = {
     title: 'country | Journey Rover'
 }
 
-export default async function Page({ params }: { params: { country: string } }) {
+type Tparams = Promise<{ country: string }>
+
+export default async function Page({ params }: {params: Tparams}) {
     const { country } = await params
     return (
         <>{country}</>
