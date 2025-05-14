@@ -1,5 +1,10 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
+type TFavaoriteITem = {
+    id: string,
+    name: string
+}
+
 export const fetchFavorite = createAsyncThunk(
     "favoriteSlice/fetchFavorite",
     async () => {
@@ -25,7 +30,7 @@ export const addFavorite = createAsyncThunk(
 )
 
 const favoriteSlice = createSlice({
-    initialState: [] as any,
+    initialState: [] as TFavaoriteITem[],
     name: "favoriteSlice",
     reducers: {},
     extraReducers: (builder) => {
