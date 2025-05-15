@@ -72,7 +72,7 @@ export default function TopPlaces() {
             </div>
             <div className='overflow-hidden '>
                 <div
-                    className='flex gap-2 relative '
+                    className='flex gap-5 relative '
                     style={{
                         transform: `translateX(-${current * slideWidth}px)`,
                         transition: transition ? 'transform .3s ease-in-out' : 'none'
