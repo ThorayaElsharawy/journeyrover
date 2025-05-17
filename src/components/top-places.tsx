@@ -17,40 +17,17 @@ const ORIGINAL_DESTIS = [
     { id: 6, img: Australia, place: "Uluru", country: "Australia" },
 ];
 
-const SLIDES = [...ORIGINAL_DESTIS, ...ORIGINAL_DESTIS]
-
 export default function TopPlaces() {
     const [current, setCurrent] = useState(0)
-    const slideWidth = 300
-    const [transition, setTransition] = useState(false)
-    const [isAnimating, setIsAnimating] = useState(false)
 
     const prevSlide = () => {
-        if (isAnimating) return
-
-        setIsAnimating(true)
-        setCurrent((prev) => (prev === 0 ? ORIGINAL_DESTIS.length - 1 : prev - 1))
+        setCurrent(prev => prev === 0 ? ORIGINAL_DESTIS.length - 4 : prev - 1)
     }
 
     const nextSlide = () => {
-        if (isAnimating) return
-
-        setIsAnimating(true)
-        setCurrent(prev => prev + 1);
+        setCurrent(prev => prev === ORIGINAL_DESTIS.length - 4 ? 0 : prev + 1)
     }
 
-    useEffect(() => {
-        if (current >= ORIGINAL_DESTIS.length) {
-            setTimeout(() => {
-                setIsAnimating(false)
-                setTransition(false)
-                setCurrent(0)
-            }, 300)
-        } else {
-            setTimeout(() => setIsAnimating(false), 500)
-            setTransition(true)
-        }
-    }, [current]);
 
     return (
         <div className="my-10">
@@ -70,17 +47,19 @@ export default function TopPlaces() {
                     <IoAirplaneSharp className="text-[#dcbb87] group-hover:text-white transition-all" />
                 </motion.button>
             </div>
-            <div className='overflow-hidden '>
+            <div className='overflow-hidden'>
                 <div
-                    className='flex gap-5 relative '
+                    className='flex gap-5 relative'
                     style={{
-                        transform: `translateX(-${current * slideWidth}px)`,
-                        transition: transition ? 'transform .3s ease-in-out' : 'none'
-                    }}>
-                    {SLIDES.map((dest, index) => ( 
+                        transform: `translateX(-${current * 300}px)`,
+                        transition:'transform 0.3s ease-in-out'
+                    }}
+                >
+                    {ORIGINAL_DESTIS.map((dest, index) => (
                         <div
                             key={`${dest.id}-${index}`}
-                            className='flex flex-col min-w-[280px]'>
+                            className='flex flex-col min-w-[280px]'
+                        >
                             <Image
                                 src={dest.img}
                                 width={200}

@@ -2,7 +2,6 @@ import React from 'react'
 import Container from '@/components/container'
 
 export default function TopVacationDestination() {
-    console.log('here')
     return (
         <Container className='py-12'>
             <h2 className='text-3xl font-bold'>Top Vacation Destination</h2>
