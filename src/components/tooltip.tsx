@@ -19,7 +19,7 @@ export default function Tooltip({ hoveredArea }: { hoveredArea: string }) {
     return (
         <div className='absolute bottom-3 right-2 end-0 z-50 max-w-min lg:max-w-[250px]  w-full h-[270px] bg-white shadow-2xl p-2.5 rounded-lg border border-black/5'>
             <Image className='-mt-10 w-[120px] h-[100px] ml-auto rounded-3xl shadow-[0_0_5px_#88726bb5]' 
-            src={country?.flags?.png} alt={country?.name?.common} width={200} height={200} />
+            src={country && country?.flags?.png} alt={country?.name?.common} width={200} height={200} />
             <div className='border-b pb-2 border-gray-300'>
                 <h2 className='text-xl mb-2 font-bold'>{country?.name?.common}</h2>
                 <h1 className='text-[#a46602] font-semibold'>Federal Republic of Germany</h1>
