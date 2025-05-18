@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Image from "next/image";
 import Vietnam from "@/assets/Vietnam.jpg"
 import Croatia from "@/assets/Croatia.jpg"
@@ -52,7 +52,7 @@ export default function TopPlaces() {
                     className='flex gap-5 relative'
                     style={{
                         transform: `translateX(-${current * 300}px)`,
-                        transition:'transform 0.3s ease-in-out'
+                        transition: 'transform 0.3s ease-in-out'
                     }}
                 >
                     {ORIGINAL_DESTIS.map((dest, index) => (
