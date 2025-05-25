@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import React from 'react'
 import footerImg from '@/assets/footer-img.png'
-import logo from '@/assets/logo.png'
+import logo from '../../public/logo.png'
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 import Container from './container'
 import { motion } from 'framer-motion'
@@ -26,7 +26,7 @@ export default function Footer() {
                                 delay: 0.2
                             }}
                             className="flex items-center justify-center">
-                            <Image src={logo} width={80} height={80} alt="logo" className='brightness-0 invert-100' />
+                            <Image src={logo} width={80} height={80} alt="logo" />
                             <h2 className="text-2xl uppercase font-poetsen text-white">Journey Rover</h2>
                         </motion.div>
                         <motion.div
