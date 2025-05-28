@@ -1,19 +1,12 @@
 import Container from '@/components/container'
 import React from 'react'
 
-import sharm from '@/assets/egypt-sherm.jpg'
-import aswan from '@/assets/egypt-aswan.jpg'
-import alex from '@/assets/egypt-alex.jpg'
 import logo from '../../../../public/logo.png'
 
 import Image from 'next/image'
-import { MdSunny } from 'react-icons/md';
-import { FaDirections, FaMapPin } from 'react-icons/fa';
-import { CiLocationOn } from 'react-icons/ci';
-import { BiLeftArrow, BiRightArrow } from 'react-icons/bi'
-import { IoMdArrowDropleft, IoMdArrowDropright } from 'react-icons/io'
-import { LuArrowBigLeft, LuArrowBigRight } from 'react-icons/lu'
-import { GrLocation } from 'react-icons/gr'
+import { MdSunny } from 'react-icons/md'
+import CitiesImg from '@/components/cities-img'
+
 
 export async function generateMetadata({ params }: { params: { country: string } }) {
     return {
@@ -27,11 +20,11 @@ export default async function Page({ params }: { params: Tparams }) {
     const { country } = await params
     return (
         <div>
-            <div className='relative w-screen overflow-hidden'>
-                <div className='bg-[url(../assets/egypt1.jpg)] bg-no-repeat bg-cover absolute inset-0 -z-1 brightness-20' />
+            <div className='relative'>
+                <div className='bg-[url(../assets/egypt1.jpg)] bg-no-repeat bg-cover absolute inset-0 -z-1 brightness-20 object-cover ' />
 
-                <Container className='flex flex-col mt-10'>
-                    <nav className='p-4 text-white flex items-center justify-between bg-white/5 rounded-4xl backdrop-blur-2xl'>
+                <Container className='flex flex-col pt-10'>
+                    <nav className='p-3 text-white flex items-center justify-between bg-white/5 rounded-4xl backdrop-blur-2xl'>
                         <div className='flex items-center gap-2'>
                             <Image src={logo} alt='logo' width={40}></Image>
                             <h2 className='text-2xl font-bold font-poetsen'>JourneyRover</h2>
@@ -43,7 +36,7 @@ export default async function Page({ params }: { params: Tparams }) {
                             <li>blog</li>
                         </ul>
                     </nav>
-                    <div className='grid grid-cols-1 md:grid-cols-2 items-center justify-center text-white m-auto w-full h-full py-27'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 items-center justify-center text-white m-auto w-full h-full py-26'>
                         <div className='space-y-8'>
                             <div className='p-4 px-8 text-xl bg-white/10 max-w-max rounded-md backdrop-blur-3xl'>
                                 <p className='flex items-center '>
@@ -51,33 +44,42 @@ export default async function Page({ params }: { params: Tparams }) {
                                     <span className='mx-1'>28°C</span>  - Sunny</p>
                                 <p>Cairo, May 24</p>
                             </div>
-                            <div className='text-5xl uppercase space-y-2 font-bold font-poetsen'>
+                            <div className='text-5xl uppercase space-y-2 font-bold font-mono'>
                                 <h2>Discover</h2>
                                 <h1>egypt (<span className='text-yellow-700 px-1'>Africa</span>)</h1>
                             </div>
-                            <p className='text-xl max-w-md'>Progressive nation with futuristic architecture, diverse culture, economic growth, desert wonders, and a strong global presence.</p>
+                            <p className='max-w-md'>
+                                Historically, geographically, and culturally, Egypt is a colossus. Its past reads like a grand epic, and the country is rich in signposts to this story,                                </p>
+
                         </div>
-                        <div className='relative'>
-                            <div className='flex gap-8 items-center'>
-                                <div className='min-w-[350px]'>
-                                    <small className='font-bold pb-2 inline-block'>Sharm El-Sheikh</small>
-                                    <Image src={sharm} alt='sharm' className='h-[500px] rounded-xl' />
-                                </div>
-                                <div className='min-w-[250px]'>
-                                    <small className='font-bold pb-1 inline-block text-white/50'>Aswan</small>
-                                    <Image src={aswan} alt='sherm' className='h-[350px] brightness-70 rounded-xl' />
-                                </div>
-                                <div className='min-w-[250px]'>
-                                    <small className='font-bold pb-1 inline-block text-white/50'>Alexandria</small>
-                                    <Image src={alex} alt='alex' className='h-[350px] brightness-70 rounded-xl' />
-                                </div>
-                            </div>
-                            <div className='flex gap-4 items-center justify-between mt-20 w-full'>
-                                <button className='p-3 bg-white/10 rounded-full cursor-pointer'><LuArrowBigLeft className=' text-white/50' /></button>
-                                <button className='p-3 bg-white/10 rounded-full cursor-pointer'><LuArrowBigRight className='' /></button>
-                                <div className='w-full bg-white/30 h-[1px]' />
-                                <p className='text-[#cf6f14] text-xl'>01</p>
-                            </div>
+                        <div className=' relative'>
+                            <CitiesImg />
+                        </div>
+                    </div>
+                    <div className='grid grid-cols-3 md:grid-cols-8 gap-3  items-center justify-between py-6 '>
+                        <div className='md:col-span-2 border-l-[.5px] border-white/50 ps-3 py-3 space-y-2'>
+                            <small className='text-white/80 inline-block'>Best time to visit</small>
+                            <p className='text-white font-semibold'>October to May to avoid the heat</p>
+                        </div>
+                        <div className='border-l-[.5px] border-white/50 ps-3 py-3 space-y-2'>
+                            <small className='text-white/80 inline-block'>Capital</small>
+                            <p className='text-white font-semibold'>Cairo</p>
+                        </div>
+                        <div className='border-l-[.5px] border-white/50 ps-3 py-3 space-y-2'>
+                            <small className='text-white/80 inline-block'>Language</small>
+                            <p className='text-white font-semibold'>Arabic</p>
+                        </div>
+                        <div className='md:col-span-2 border-l-[.5px] border-white/50 ps-3 py-3 space-y-2'>
+                            <small className='text-white/80 inline-block'>Currency</small>
+                            <p className='text-white font-semibold'>Egyptian Pound = 0.020 $</p>
+                        </div>
+                        <div className='border-l-[.5px] border-white/50 ps-3 py-3 space-y-2'>
+                            <small className='text-white/80 inline-block'>Police Number</small>
+                            <p className='text-white font-semibold'>122</p>
+                        </div>
+                        <div className='border-l-[.5px] border-white/50 ps-3 py-3 space-y-2'>
+                            <small className='text-white/80 inline-block'>Ambulance Number</small>
+                            <p className='text-white font-semibold'>123</p>
                         </div>
                     </div>
                 </Container>
@@ -132,3 +134,46 @@ export default async function Page({ params }: { params: Tparams }) {
         </div>
     )
 }
+
+
+
+
+
+
+{/* <div className='w-full rounded-xl bg-cover bg-center relative'>
+                            <div className='bg-[url(../assets/egypt-world.png)] absolute h-[300px] w-full bg-center bg-cover bg-no-repeat rounded-xl -z-1 brightness-20' />
+                            <div className='p-5  space-y-2'>
+                                <div className='flex items-center justify-between'>
+                                    <p className='flex items-center text-xl'>
+                                        <MdSunny className='text-[#cf6f14] text-2xl' />
+                                        <span className='mx-1'>28°C</span>  - Sunny
+                                    </p>
+                                    <p className=''>Warm</p>
+                                </div>
+                                <div className='flex items-center justify-between'>
+                                    <p className='flex items-center gap-2'><FaLocationCrosshairs className='text-[#cf6f14] text-2xl' />Capital</p>
+                                    <p>Cairo</p>
+                                </div>
+                                <div className='flex items-center justify-between'>
+                                    <p className='flex items-center gap-2'>
+                                        <IoLanguage className='text-[#cf6f14] text-2xl' />Language
+                                    </p>
+                                    Arabic
+                                </div>
+                                <div className='flex items-center justify-between'>
+                                    <p className='flex items-center gap-2'>
+                                        <MdCurrencyExchange className='text-[#cf6f14] text-2xl' />
+                                        currency
+                                    </p>
+                                    <div>
+                                        Egyptian Pound = 0.020 $
+                                    </div>
+                                </div>
+                                <div>
+                                    Emergency:
+                                    <p>police: 122</p>
+                                    <p>Ambulance: 123</p>
+                                </div>
+                                <div>Best Mounth to visit: from APR to May</div>
+                            </div>
+                        </div> */}
